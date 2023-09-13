@@ -1,0 +1,12 @@
+:root {
+  --font-family: Poppins, sans-serif;
+  --color-icon: rgba(0, 0, 0, 0.4);
+  --color-border: rgba(0, 0, 0, 1);
+}
+
+html {
+  font-family: var(--font-family);
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 16px;
+}
