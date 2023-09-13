@@ -8,10 +8,10 @@ export default function Home() {
     <>
       <div className="image-introduce">
         <div className="text-introduce">
-          <p>Let's Create Your</p>
+          <p>Let&apos;s Create Your</p>
           <h1>Dream Party</h1>
           <p id="achievement-intro">
-            Parkistan's Larget Online Party Supplies Store
+            Parkistan&apos;s Larget Online Party Supplies Store
           </p>
           <div id="highlight"></div>
           <button id="shop-now-btn">Shop now</button>
