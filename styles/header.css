@@ -32,6 +32,7 @@
   margin-top: 0.9em;
   height: 2em;
   margin-right: 1em;
+  outline: none;
 }
 
 #search-header-form {
@@ -42,19 +43,30 @@
   outline: none;
 }
 
+.search-space {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .search-space span {
-  vertical-align: middle;
   cursor: pointer;
+  margin-top: 0.2em;
 }
 
 .search-space::before {
   margin: 0.5em;
+  margin-right: 0.2em;
   content: "";
   display: inline-block;
   vertical-align: middle;
   width: 0.1em;
   height: 2em;
   background-color: var(--color-icon);
+}
+
+.search-space input {
+  margin-top: 0.25em;
 }
 
 /* nav bar desktop */
