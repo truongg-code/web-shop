@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "@styles/header.css";
 import Link from "next/link";
+// import { useState } from "react";
 
 const Header = () => {
   return (
@@ -18,6 +19,7 @@ const Header = () => {
         />
 
         <div className="nav-bar-desktop">
+          <p id="menu">Menu</p>
           <div className="nav-option">
             <Link href="#">Home</Link>
           </div>
