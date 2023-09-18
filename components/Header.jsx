@@ -1,13 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import styles from "@styles/header.css";
 import Link from "next/link";
-// import { useState } from "react";
+import { useState } from "react";
 
 const Header = () => {
+  const [navActive, setNavActive] = useState(false);
+
   return (
     <div className="header">
       <div className="nav-bar">
-        <span className="material-symbols-outlined">menu</span>
+        <span
+          className="material-symbols-outlined"
+          onClick={() => setNavActive(true)}
+        >
+          menu
+        </span>
       </div>
       <div className="header-desktop">
         <Image
@@ -18,7 +27,7 @@ const Header = () => {
           className="logo-shop"
         />
 
-        <div className="nav-bar-desktop">
+        <div className={`nav-bar-desktop ${navActive ? "active" : ""}`}>
           <p id="menu">Menu</p>
           <div className="nav-option">
             <Link href="#">Home</Link>
@@ -36,8 +45,40 @@ const Header = () => {
             <Link href="#">Instructions</Link>
           </div>
           <div className="nav-option">
-            <Link href="#">Contact Us/Reviews</Link>
+            <Link href="#">Contact Us / Reviews</Link>
           </div>
+          <div className="nav-option add-option">
+            <Link href="#">
+              <span className="material-symbols-outlined">search</span>
+              Search
+            </Link>
+          </div>
+          <div className="nav-option add-option">
+            <Link href="#">
+              <span className="material-symbols-outlined">person</span>
+              Login / Register
+            </Link>
+          </div>
+          <div className="need-help">
+            <p>Need help?</p>
+            <Link href="#" className="infor_communication">
+              <span class="material-symbols-outlined">call</span>
+              0332908528
+            </Link>
+            <br />
+            <Link href="#" className="infor_communication">
+              <span class="material-symbols-outlined">mail</span>
+              infor@dreamparty.pk
+            </Link>
+          </div>
+        </div>
+        <div
+          className={`btn-close ${navActive ? "active" : ""}`}
+          onClick={() => {
+            setNavActive(false);
+          }}
+        >
+          Close
         </div>
       </div>
 
