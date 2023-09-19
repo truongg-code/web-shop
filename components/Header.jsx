@@ -5,8 +5,36 @@ import styles from "@styles/header.css";
 import Link from "next/link";
 import { useState } from "react";
 
+const CATE_LIST = [
+  {
+    text: "Home",
+    url: "/",
+  },
+  {
+    text: "Shop All",
+    url: "/shop-all",
+  },
+  {
+    text: "Special Occassions",
+    url: "/special-occassions",
+  },
+  {
+    text: "Items categories",
+    url: "/items-categories",
+  },
+  {
+    text: "Instructions",
+    url: "/instructions",
+  },
+  {
+    text: "Contact Us / Reviews",
+    url: "/contact-us",
+  },
+];
+
 const Header = () => {
   const [navActive, setNavActive] = useState(false);
+  const [activeIdx, setActiveIdx] = useState(0);
 
   return (
     <div className="header">
@@ -29,30 +57,27 @@ const Header = () => {
 
         <div className={`nav-bar-desktop ${navActive ? "active" : ""}`}>
           <p id="menu">Menu</p>
-          <div className="nav-option">
-            <Link href="#">Home</Link>
-          </div>
-          <div className="nav-option">
-            <Link href="#">Shop All</Link>
-          </div>
-          <div className="nav-option">
-            <Link href="#">Special Occassions</Link>
-          </div>
-          <div className="nav-option">
-            <Link href="#">Items categories</Link>
-          </div>
-          <div className="nav-option">
-            <Link href="#">Instructions</Link>
-          </div>
-          <div className="nav-option">
-            <Link href="#">Contact Us / Reviews</Link>
-          </div>
+          {CATE_LIST.map((menu, idx) => {
+            return (
+              <div
+                key={menu.text}
+                onClick={() => {
+                  setActiveIdx(idx);
+                  setNavActive(false);
+                }}
+                className={`nav-option ${activeIdx === idx ? "active" : ""}`}
+              >
+                <Link href={menu.url}>{menu.text}</Link>
+              </div>
+            );
+          })}
           <div className="nav-option add-option">
             <Link href="#">
               <span className="material-symbols-outlined">search</span>
               Search
             </Link>
           </div>
+
           <div className="nav-option add-option">
             <Link href="#">
               <span className="material-symbols-outlined">person</span>
