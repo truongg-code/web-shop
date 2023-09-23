@@ -2,6 +2,7 @@ import Image from "next/image";
 import "@styles/home.css";
 import Header from "@components/Header.jsx";
 import Feed from "@components/Feed";
+import Feedback from "@components/Feedback";
 
 export default function Home() {
   return (
@@ -37,6 +38,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <p className="section-title">Our Customers Reviews</p>
+      <div className="testimonial">
+        <Feedback />
+        <Feedback />
+        <Feedback />
       </div>
     </>
   );

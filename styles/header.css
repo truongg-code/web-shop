@@ -85,11 +85,11 @@
   padding: 0.2em 1em;
   box-sizing: border-box;
   position: relative;
+  transition: all 0.5s;
 }
 
 .nav-option:hover {
   color: aqua;
-  transition: all 0.5s;
 }
 
 .nav-option::before {
@@ -138,6 +138,7 @@
   color: var(--color-icon);
   margin-right: 0.5em;
   font-weight: 100;
+  cursor: pointer;
 }
 
 .logo-shop {
@@ -153,6 +154,29 @@
 
 #account {
   display: none;
+}
+@media only screen and (min-width: 360px) {
+  .nav-bar-desktop {
+    margin-left: 2.7em;
+  }
+
+  .btn-close {
+    display: none;
+    position: absolute;
+    top: 0.1em;
+    left: -27em;
+    width: 3em;
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .btn-close.active {
+    display: block;
+    left: 17.5em;
+    transition: all 1s;
+  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -192,7 +216,7 @@
     transition: all 0.5s;
   }
 
-  .btn-close {
+  /* .btn-close {
     display: none;
     position: absolute;
     top: 0;
@@ -208,7 +232,7 @@
     display: block;
     left: 17em;
     transition: all 1s;
-  }
+  } */
 
   #menu {
     margin-top: 1em;

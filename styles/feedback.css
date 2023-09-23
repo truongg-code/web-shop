@@ -1,0 +1,48 @@
+.evaluation {
+  max-width: 30%;
+  max-height: 100%;
+}
+
+.review blockquote {
+  display: inline-block;
+  margin: 0.2em 0.2em 0;
+  background: #efefef;
+  padding: 3em 2em;
+  position: relative;
+  border: none;
+  border-radius: 0.5em;
+  font-style: italic;
+  box-shadow: 3px 2px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.review blockquote:before {
+  content: "\201C";
+  position: absolute;
+  font-size: 4.5em;
+  line-height: 1;
+  color: #757f9a;
+  font-size: normal;
+  top: 0;
+  left: -0.1em;
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid aqua;
+  border-right: 20px solid rgba(0, 0, 0, 0);
+  border-top: 20px solid #efefef;
+  border-bottom: 20px solid transparent;
+  margin: 0 0 0 60px;
+  /* box-shadow: 3px 2px 16px 0px rgba(0, 0, 0, 0.2); */
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 750px) {
+  .evaluation {
+    margin-top: 2em;
+  }
+}

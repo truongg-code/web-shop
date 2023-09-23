@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/google-font-display */
-import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "@components/Header";
 import Feed from "@components/Feed";
@@ -21,7 +20,6 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
         />
-        {/* <link as="style" rel="stylesheet preload" href="@styles/global.css" /> */}
       </head>
       <body className={inter.className}>
         <Header />

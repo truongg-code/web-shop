@@ -29,15 +29,15 @@ const Footer = () => {
       <div className="footer-large">
         <div id="footer-infor">
           <div className="communications">
-            <span class="material-symbols-outlined">distance</span>
+            <span className="material-symbols-outlined">distance</span>
             Dreamparty.pk
           </div>
           <div className="communications">
-            <span class="material-symbols-outlined">mail</span>
+            <span className="material-symbols-outlined">mail</span>
             infor@dreamparty.pk
           </div>
           <div className="communications">
-            <span class="material-symbols-outlined">call</span>
+            <span className="material-symbols-outlined">call</span>
             0332908528
           </div>
         </div>

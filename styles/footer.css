@@ -1,6 +1,6 @@
 .footer {
   height: 19em;
-  background-color: rgba(173, 170, 172, 0.1);
+  background-color: rgb(43, 42, 43);
   padding: 0.3em;
   padding-bottom: 1em;
 }
@@ -58,7 +58,7 @@
 }
 
 #footer-email {
-  width: 69%;
+  width: 70%;
   height: 100%;
   border-radius: 46px;
   border-color: transparent;
@@ -77,7 +77,7 @@
   color: #fff;
   background-color: #000;
   border-color: transparent;
-  margin: 0.1em 0.1em;
+  margin: 0.1em 0em;
   cursor: pointer;
 }
 

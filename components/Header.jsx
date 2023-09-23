@@ -87,12 +87,12 @@ const Header = () => {
           <div className="need-help">
             <p>Need help?</p>
             <Link href="#" className="infor_communication">
-              <span class="material-symbols-outlined">call</span>
+              <span className="material-symbols-outlined">call</span>
               0332908528
             </Link>
             <br />
             <Link href="#" className="infor_communication">
-              <span class="material-symbols-outlined">mail</span>
+              <span className="material-symbols-outlined">mail</span>
               infor@dreamparty.pk
             </Link>
           </div>
