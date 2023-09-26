@@ -1,5 +1,76 @@
+/* feedback */
+.feedback {
+  height: 21em;
+  max-width: 100vw;
+  margin: 1em 1em;
+  background-color: bisque;
+  position: relative;
+}
+
+.slider-nav {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  column-gap: 0.5em;
+  bottom: 1em;
+}
+
+.btn-circle {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: aliceblue;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity ease 250ms;
+}
+
+.btn-circle.active {
+  opacity: 1;
+}
+
+.btn-circle:hover {
+  opacity: 1;
+}
+
+.prev,
+.next {
+  position: absolute;
+  color: aliceblue;
+  top: 40%;
+  font-size: 2em;
+  padding: 0.5em 0.1em;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+  user-select: none;
+  background-color: #000;
+  opacity: 0.2;
+}
+
+.next {
+  right: 0;
+  border-radius: 20px 0 0 20px;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 0.5;
+  transition: all 2s;
+}
+
+/* review */
+.testimonial {
+  display: none;
+}
+
+.testimonial.active {
+  display: flex;
+  justify-content: space-around;
+}
+
 .evaluation {
-  max-width: 30%;
+  max-width: 32%;
   max-height: 100%;
 }
 
@@ -29,8 +100,8 @@
 #triangle {
   width: 0;
   height: 0;
-  border-left: 20px solid aqua;
-  border-right: 20px solid rgba(0, 0, 0, 0);
+  border-left: 20px solid #efefef;
+  border-right: 20px solid transparent;
   border-top: 20px solid #efefef;
   border-bottom: 20px solid transparent;
   margin: 0 0 0 60px;
@@ -39,6 +110,12 @@
 
 .avatar {
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 400px) {
+  .testimonial.active {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 750px) {

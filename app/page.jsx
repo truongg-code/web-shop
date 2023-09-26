@@ -40,11 +40,7 @@ export default function Home() {
         </div>
       </div>
       <p className="section-title">Our Customers Reviews</p>
-      <div className="testimonial">
-        <Feedback />
-        <Feedback />
-        <Feedback />
-      </div>
+      <Feedback />
     </>
   );
 }
