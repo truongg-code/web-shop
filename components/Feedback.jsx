@@ -114,10 +114,22 @@ const Feedback = () => {
           ></div>
         ))}
       </div>
-      <div className="prev" onClick={() => setActIdx(actIdx - 1)}>
+      <div
+        className="prev"
+        onClick={() => {
+          if (actIdx === 0) setActIdx(users_list.length - 1);
+          else setActIdx(actIdx - 1);
+        }}
+      >
         ❮
       </div>
-      <div className="next" onClick={() => setActIdx(actIdx + 1)}>
+      <div
+        className="next"
+        onClick={() => {
+          if (actIdx === users_list.length - 1) setActIdx(0);
+          else setActIdx(actIdx + 1);
+        }}
+      >
         ❯
       </div>
     </div>

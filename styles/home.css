@@ -181,6 +181,10 @@
   background-size: 101%;
 }
 
+.section-title {
+  font-size: 0.7em;
+}
+
 @media only screen and (min-width: 360px) {
   .image-introduce {
   }
@@ -192,10 +196,6 @@
   }
 
   #achievement-intro {
-  }
-
-  .section-title {
-    font-size: 0.7em;
   }
 
   .cate-contain {

@@ -3,34 +3,9 @@
 import Image from "next/image";
 import styles from "@styles/header.css";
 import Link from "next/link";
+import CATE_LIST from "@src/api/cateList";
+import items_categories from "@src/api/itemsCategories";
 import { useState } from "react";
-
-const CATE_LIST = [
-  {
-    text: "Home",
-    url: "/",
-  },
-  {
-    text: "Shop All",
-    url: "/shop-all",
-  },
-  {
-    text: "Special Occassions",
-    url: "/special-occassions",
-  },
-  {
-    text: "Items categories",
-    url: "/items-categories",
-  },
-  {
-    text: "Instructions",
-    url: "/instructions",
-  },
-  {
-    text: "Contact Us / Reviews",
-    url: "/contact-us",
-  },
-];
 
 const Header = () => {
   const [navActive, setNavActive] = useState(false);
@@ -58,18 +33,46 @@ const Header = () => {
         <div className={`nav-bar-desktop ${navActive ? "active" : ""}`}>
           <p id="menu">Menu</p>
           {CATE_LIST.map((menu, idx) => {
-            return (
-              <div
-                key={menu.text}
-                onClick={() => {
-                  setActiveIdx(idx);
-                  setNavActive(false);
-                }}
-                className={`nav-option ${activeIdx === idx ? "active" : ""}`}
-              >
-                <Link href={menu.url}>{menu.text}</Link>
-              </div>
-            );
+            if (menu.text === "Items categories") {
+              return (
+                <>
+                  <div
+                    key={menu.text}
+                    onClick={() => {
+                      setActiveIdx(idx);
+                      setNavActive(false);
+                    }}
+                    className={`nav-option item-nav ${
+                      activeIdx === idx ? "active" : ""
+                    }`}
+                  >
+                    <Link href={menu.url}>{menu.text}</Link>
+                    <div className="items-cate">
+                      {items_categories.map((item, idx) => {
+                        return (
+                          <div key={idx} className="item">
+                            {item.name}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </>
+              );
+            } else {
+              return (
+                <div
+                  key={menu.text}
+                  onClick={() => {
+                    setActiveIdx(idx);
+                    setNavActive(false);
+                  }}
+                  className={`nav-option ${activeIdx === idx ? "active" : ""}`}
+                >
+                  <Link href={menu.url}>{menu.text}</Link>
+                </div>
+              );
+            }
           })}
           <div className="nav-option add-option">
             <Link href="#">
