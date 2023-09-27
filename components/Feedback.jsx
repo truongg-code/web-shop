@@ -63,7 +63,7 @@ const Feedback = () => {
   const [actIdx, setActIdx] = useState(0);
   useEffect(() => {
     const intervalId = setInterval(() => {
-      if (actIdx === users_list.length - 2) {
+      if (actIdx === users_list.length - 1) {
         setActIdx(0);
       } else setActIdx(actIdx + 1);
     }, 5000);
