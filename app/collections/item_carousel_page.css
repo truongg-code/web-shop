@@ -1,0 +1,133 @@
+.name-item-page {
+  width: 100vw;
+  height: 15em;
+  text-align: center;
+  line-height: 15em;
+  background-color: rgba(90, 90, 90, 0.5);
+  color: #fff;
+}
+
+.name-item-page h2 {
+  font-weight: 500;
+}
+
+.feature {
+  color: var(--color-icon);
+  margin: 2em 5em;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  height: 2em;
+}
+
+.filter span {
+  vertical-align: middle;
+}
+
+.filter:hover {
+  cursor: pointer;
+  color: var(--color-text-hover);
+}
+
+.grid-view-container {
+  display: flex;
+  column-gap: 1em;
+}
+
+.change-grid {
+  width: 5em;
+  color: var(--color-icon);
+  border-radius: 0.5em;
+  border: 1px solid var(--color-icon);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.change-grid:hover {
+  color: #000;
+  border-color: #000;
+}
+
+.change-grid.active {
+  color: #000;
+  border-color: #000;
+}
+
+#filter_fast {
+  width: 11em;
+  border-radius: 1em;
+  cursor: pointer;
+  outline: var(--color-icon);
+  color: var(--color-icon);
+}
+
+.product_list {
+  margin: 0 5em;
+  max-width: 100%;
+  /* background-color: antiquewhite; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 1em;
+  margin-bottom: 1em;
+  row-gap: 1em;
+}
+
+.product_list.grid_active1 {
+  grid-template-columns: auto;
+}
+
+.product_list.grid_active2 {
+  grid-template-columns: auto auto;
+}
+
+.product_list.grid_active3 {
+  grid-template-columns: auto auto auto;
+}
+
+.product_list.grid_active4 {
+  grid-template-columns: auto auto auto auto;
+}
+
+.product_information {
+  height: 30em;
+  /* background-color: var(--color-icon); */
+  border: 1px solid var(--color-icon);
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+.product_information.grid_active2 {
+  height: 45em;
+}
+
+.product_information.grid_active4 {
+  height: 22em;
+  /* background-color: aqua; */
+}
+
+.image-container {
+  height: 80%;
+  margin-bottom: 1em;
+  background: url("https://dreamparty.pk/cdn/shop/products/Foil-Alphabets.jpg?v=1661501386&width=900");
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* #image_product {
+  width: 100%;
+  height: 100%;
+} */
+
+.product_name {
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.product_name:hover {
+  color: var(--color-text-hover);
+}
+
+.price {
+  color: var(--color-icon);
+}

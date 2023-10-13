@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable @next/next/google-font-display */
 import { Inter } from "next/font/google";
 import Header from "@components/Header";

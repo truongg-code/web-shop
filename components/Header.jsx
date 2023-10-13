@@ -5,7 +5,7 @@ import styles from "@styles/header.css";
 import Link from "next/link";
 import CATE_LIST from "@src/api/cateList";
 import items_categories from "@src/api/itemsCategories";
-import speacial_occassions from "@src/api/specialOccassions";
+import special_occassions from "@src/api/specialOccassions";
 import { useState } from "react";
 
 const Header = () => {
@@ -36,55 +36,51 @@ const Header = () => {
           {CATE_LIST.map((menu, idx) => {
             if (menu.text === "Items categories") {
               return (
-                <>
-                  <div
-                    key={menu.text}
-                    onClick={() => {
-                      setActiveIdx(idx);
-                      setNavActive(false);
-                    }}
-                    className={`nav-option item-nav ${
-                      activeIdx === idx ? "active" : ""
-                    }`}
-                  >
-                    <Link href={menu.url}>{menu.text}</Link>
-                    <div className="items-cate">
-                      {items_categories.map((item, idx) => {
-                        return (
-                          <div key={idx} className="item">
-                            {item.name}
-                          </div>
-                        );
-                      })}
-                    </div>
+                <div
+                  key={menu.text}
+                  onClick={() => {
+                    setActiveIdx(idx);
+                    setNavActive(false);
+                  }}
+                  className={`nav-option item-nav ${
+                    activeIdx === idx ? "active" : ""
+                  }`}
+                >
+                  <Link href={menu.url}>{menu.text}</Link>
+                  <div className="items-cate">
+                    {items_categories.map((item, idx) => {
+                      return (
+                        <div key={idx} className="item">
+                          {item.name}
+                        </div>
+                      );
+                    })}
                   </div>
-                </>
+                </div>
               );
             } else if (menu.text === "Special Occassions") {
               return (
-                <>
-                  <div
-                    key={menu.text}
-                    onClick={() => {
-                      setActiveIdx(idx);
-                      setNavActive(false);
-                    }}
-                    className={`nav-option item-nav ${
-                      activeIdx === idx ? "active" : ""
-                    }`}
-                  >
-                    <Link href={menu.url}>{menu.text}</Link>
-                    <div className="items-cate">
-                      {speacial_occassions.map((item, idx) => {
-                        return (
-                          <div key={idx} className="item">
-                            {item.name}
-                          </div>
-                        );
-                      })}
-                    </div>
+                <div
+                  key={menu.text}
+                  onClick={() => {
+                    setActiveIdx(idx);
+                    setNavActive(false);
+                  }}
+                  className={`nav-option item-nav ${
+                    activeIdx === idx ? "active" : ""
+                  }`}
+                >
+                  <Link href={menu.url}>{menu.text}</Link>
+                  <div className="items-cate">
+                    {special_occassions.map((item, idx) => {
+                      return (
+                        <div key={idx} className="item">
+                          {item.name}
+                        </div>
+                      );
+                    })}
                   </div>
-                </>
+                </div>
               );
             } else {
               return (

@@ -91,7 +91,7 @@
 }
 
 .copyright span {
-  color: aqua;
+  color: var(--color-text-hover);
 }
 
 @media only screen and (min-width: 375px) {

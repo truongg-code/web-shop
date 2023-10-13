@@ -1,0 +1,32 @@
+.item-carousel-container {
+  min-width: 30em;
+  height: 3em;
+  /* color: var(--color-icon); */
+  cursor: pointer;
+  line-height: 3em;
+  text-align: center;
+}
+
+.item-carousel:hover {
+  color: var(--color-text-hover);
+}
+
+.inner-carousel {
+  display: flex;
+  /* background: lightblue; */
+}
+
+.carousel {
+  margin-top: 15vh;
+  cursor: grab;
+  overflow: hidden;
+  /* background-color: rgba(230, 173, 173); */
+  position: relative;
+  border-top: 0.5px solid var(--color-icon);
+  border-bottom: 0.5px solid var(--color-icon);
+}
+
+#next {
+  position: absolute;
+  bottom: 0;
+}
