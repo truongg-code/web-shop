@@ -64,56 +64,98 @@ const Wedding = () => {
       <div className={`product_list grid_active${gridCurrent}`}>
         <div className={`product_information grid_active${gridCurrent}`}>
           <div className="image-container"></div>
-          <h6 className="product_name">
-            Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
-            Piece
-          </h6>
-          <p className="price">$50</p>
+          <div className="intro_production">
+            <h6 className="product_name">
+              Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
+              Piece
+            </h6>
+            <p className="price">$50</p>
+            <p className="intro_describe">
+              •Single Alphabet foil Balloon,16&quot; Inch size.•Select Color and
+              write Required Alphabet in box below, Input quantity of Alhpabet
+              required•Add to cart new Alphabet again 1 by 1 to add more.
+            </p>
+          </div>
         </div>
 
         <div className={`product_information grid_active${gridCurrent}`}>
           <div className="image-container"></div>
-          <h6 className="product_name">
-            Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
-            Piece
-          </h6>
-          <p className="price">$50</p>
+          <div className="intro_production">
+            <h6 className="product_name">
+              Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
+              Piece
+            </h6>
+            <p className="price">$50</p>
+            <p className="intro_describe">
+              •Single Alphabet foil Balloon,16&quot; Inch size.•Select Color and
+              write Required Alphabet in box below, Input quantity of Alhpabet
+              required•Add to cart new Alphabet again 1 by 1 to add more.
+            </p>
+          </div>
         </div>
 
         <div className={`product_information grid_active${gridCurrent}`}>
           <div className="image-container"></div>
-          <h6 className="product_name">
-            Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
-            Piece
-          </h6>
-          <p className="price">$50</p>
+          <div className="intro_production">
+            <h6 className="product_name">
+              Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
+              Piece
+            </h6>
+            <p className="price">$50</p>
+            <p className="intro_describe">
+              •Single Alphabet foil Balloon,16&quot; Inch size.•Select Color and
+              write Required Alphabet in box below, Input quantity of Alhpabet
+              required•Add to cart new Alphabet again 1 by 1 to add more.
+            </p>
+          </div>
         </div>
 
         <div className={`product_information grid_active${gridCurrent}`}>
           <div className="image-container"></div>
-          <h6 className="product_name">
-            Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
-            Piece
-          </h6>
-          <p className="price">$50</p>
+          <div className="intro_production">
+            <h6 className="product_name">
+              Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
+              Piece
+            </h6>
+            <p className="price">$50</p>
+            <p className="intro_describe">
+              •Single Alphabet foil Balloon,16&quot; Inch size.•Select Color and
+              write Required Alphabet in box below, Input quantity of Alhpabet
+              required•Add to cart new Alphabet again 1 by 1 to add more.
+            </p>
+          </div>
         </div>
 
         <div className={`product_information grid_active${gridCurrent}`}>
           <div className="image-container"></div>
-          <h6 className="product_name">
-            Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
-            Piece
-          </h6>
-          <p className="price">$50</p>
+          <div className="intro_production">
+            <h6 className="product_name">
+              Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
+              Piece
+            </h6>
+            <p className="price">$50</p>
+            <p className="intro_describe">
+              •Single Alphabet foil Balloon,16&quot; Inch size.•Select Color and
+              write Required Alphabet in box below, Input quantity of Alhpabet
+              required•Add to cart new Alphabet again 1 by 1 to add more.
+            </p>
+          </div>
         </div>
 
         <div className={`product_information grid_active${gridCurrent}`}>
           <div className="image-container"></div>
-          <h6 className="product_name">
-            Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
-            Piece
-          </h6>
-          <p className="price">$50</p>
+          <div className="intro_production">
+            <h6 className="product_name">
+              Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
+              Piece
+            </h6>
+            <p className="price">$50</p>
+            <p className="intro_describe">
+              •Single Alphabet foil Balloon,16&quot; Inch size.•Select Color and
+              write Required Alphabet in box below, Input quantity of Alhpabet
+              required•Add to cart new Alphabet again 1 by 1 to add more.
+            </p>
+          </div>
         </div>
       </div>
     </>

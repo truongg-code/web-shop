@@ -96,15 +96,6 @@
   padding: 0.5em;
 }
 
-.product_information.grid_active2 {
-  height: 45em;
-}
-
-.product_information.grid_active4 {
-  height: 22em;
-  /* background-color: aqua; */
-}
-
 .image-container {
   height: 80%;
   margin-bottom: 1em;
@@ -130,4 +121,41 @@
 
 .price {
   color: var(--color-icon);
+}
+
+.intro_describe {
+  display: none;
+}
+
+/* change grid */
+.product_information.grid_active1 {
+  display: flex;
+  height: 15em;
+  align-items: center;
+  column-gap: 3em;
+}
+
+.product_information.grid_active1 .image-container {
+  /* display: flex; */
+  width: 13%;
+  height: 70%;
+}
+
+.product_information.grid_active1 .intro_production {
+  width: 60%;
+}
+
+.product_information.grid_active1 .intro_describe {
+  display: inline-block;
+  text-wrap: wrap;
+  color: var(--color-icon);
+}
+
+.product_information.grid_active2 {
+  height: 45em;
+}
+
+.product_information.grid_active4 {
+  height: 22em;
+  /* background-color: aqua; */
 }
