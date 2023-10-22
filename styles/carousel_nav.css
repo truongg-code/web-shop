@@ -2,7 +2,7 @@
   min-width: 30em;
   height: 3em;
   /* color: var(--color-icon); */
-  cursor: pointer;
+  /* cursor: pointer; */
   line-height: 3em;
   text-align: center;
 }

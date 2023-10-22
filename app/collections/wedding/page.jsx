@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const Wedding = () => {
-  const [gridCurrent, setGridCurrent] = useState(3);
+  const [gridCurrent, setGridCurrent] = useState(1);
 
   return (
     <>
@@ -21,6 +21,7 @@ const Wedding = () => {
         </div>
         <div className="grid-view-container">
           <button
+            id="grid_1"
             className={`change-grid ${gridCurrent === 1 ? "active" : ""}`}
             onClick={() => {
               setGridCurrent(1);
@@ -29,6 +30,7 @@ const Wedding = () => {
             <span className="material-symbols-outlined">view_agenda</span>
           </button>
           <button
+            id="grid_2"
             className={`change-grid ${gridCurrent === 2 ? "active" : ""}`}
             onClick={() => {
               setGridCurrent(2);
@@ -37,6 +39,7 @@ const Wedding = () => {
             <span className="material-symbols-outlined">view_column_2</span>
           </button>
           <button
+            id="grid_3"
             className={`change-grid ${gridCurrent === 3 ? "active" : ""}`}
             onClick={() => {
               setGridCurrent(3);
@@ -45,6 +48,7 @@ const Wedding = () => {
             <span className="material-symbols-outlined">view_week</span>
           </button>
           <button
+            id="grid_4"
             className={`change-grid ${gridCurrent === 4 ? "active" : ""}`}
             onClick={() => {
               setGridCurrent(4);
@@ -55,15 +59,35 @@ const Wedding = () => {
             </span>
           </button>
         </div>
-        <select name="Filter Fast" id="filter_fast">
+        {/* <select name="Filter Fast" id="filter_fast">
           <option>Best Selling</option>
           <option>Featured</option>
-        </select>
+        </select> */}
+
+        <div className="filter_fast">
+          <p>Best Selling</p>
+          <span className="material-symbols-outlined">expand_more</span>
+        </div>
+        <div className="sort">
+          Sort
+          <span className="material-symbols-outlined">expand_more</span>
+        </div>
       </div>
 
       <div className={`product_list grid_active${gridCurrent}`}>
         <div className={`product_information grid_active${gridCurrent}`}>
-          <div className="image-container"></div>
+          <div className="image-container">
+            <div className="btn_quick">
+              <button className="quick_view">
+                <p>Quick view</p>
+                <span className="material-symbols-outlined">visibility</span>
+              </button>
+              <button className="quick_shop">
+                <p>Quick Shop</p>
+                <span className="material-symbols-outlined">shopping_cart</span>
+              </button>
+            </div>
+          </div>
           <div className="intro_production">
             <h6 className="product_name">
               Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
@@ -79,7 +103,18 @@ const Wedding = () => {
         </div>
 
         <div className={`product_information grid_active${gridCurrent}`}>
-          <div className="image-container"></div>
+          <div className="image-container">
+            <div className="btn_quick">
+              <button className="quick_view">
+                <p>Quick view</p>
+                <span className="material-symbols-outlined">visibility</span>
+              </button>
+              <button className="quick_shop">
+                <p>Quick Shop</p>
+                <span className="material-symbols-outlined">shopping_cart</span>
+              </button>
+            </div>
+          </div>
           <div className="intro_production">
             <h6 className="product_name">
               Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
@@ -95,7 +130,18 @@ const Wedding = () => {
         </div>
 
         <div className={`product_information grid_active${gridCurrent}`}>
-          <div className="image-container"></div>
+          <div className="image-container">
+            <div className="btn_quick">
+              <button className="quick_view">
+                <p>Quick view</p>
+                <span className="material-symbols-outlined">visibility</span>
+              </button>
+              <button className="quick_shop">
+                <p>Quick Shop</p>
+                <span className="material-symbols-outlined">shopping_cart</span>
+              </button>
+            </div>
+          </div>
           <div className="intro_production">
             <h6 className="product_name">
               Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
@@ -111,7 +157,18 @@ const Wedding = () => {
         </div>
 
         <div className={`product_information grid_active${gridCurrent}`}>
-          <div className="image-container"></div>
+          <div className="image-container">
+            <div className="btn_quick">
+              <button className="quick_view">
+                <p>Quick view</p>
+                <span className="material-symbols-outlined">visibility</span>
+              </button>
+              <button className="quick_shop">
+                <p>Quick Shop</p>
+                <span className="material-symbols-outlined">shopping_cart</span>
+              </button>
+            </div>
+          </div>
           <div className="intro_production">
             <h6 className="product_name">
               Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
@@ -127,7 +184,18 @@ const Wedding = () => {
         </div>
 
         <div className={`product_information grid_active${gridCurrent}`}>
-          <div className="image-container"></div>
+          <div className="image-container">
+            <div className="btn_quick">
+              <button className="quick_view">
+                <p>Quick view</p>
+                <span className="material-symbols-outlined">visibility</span>
+              </button>
+              <button className="quick_shop">
+                <p>Quick Shop</p>
+                <span className="material-symbols-outlined">shopping_cart</span>
+              </button>
+            </div>
+          </div>
           <div className="intro_production">
             <h6 className="product_name">
               Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
@@ -143,7 +211,18 @@ const Wedding = () => {
         </div>
 
         <div className={`product_information grid_active${gridCurrent}`}>
-          <div className="image-container"></div>
+          <div className="image-container">
+            <div className="btn_quick">
+              <button className="quick_view">
+                <p>Quick view</p>
+                <span className="material-symbols-outlined">visibility</span>
+              </button>
+              <button className="quick_shop">
+                <p>Quick Shop</p>
+                <span className="material-symbols-outlined">shopping_cart</span>
+              </button>
+            </div>
+          </div>
           <div className="intro_production">
             <h6 className="product_name">
               Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
