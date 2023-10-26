@@ -2,6 +2,7 @@
 
 import React from "react";
 import "@app/collections/item_carousel_page.css";
+import CarouselNav from "@components/CarouselNav";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -10,6 +11,7 @@ const Wedding = () => {
 
   return (
     <>
+      <CarouselNav />
       <div className="name-item-page">
         <h2>Wedding</h2>
       </div>

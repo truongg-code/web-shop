@@ -29,6 +29,7 @@ const Header = () => {
           width={50}
           height={50}
           className="logo-shop"
+          priority
         />
 
         <div className={`nav-bar-desktop ${navActive ? "active" : ""}`}>

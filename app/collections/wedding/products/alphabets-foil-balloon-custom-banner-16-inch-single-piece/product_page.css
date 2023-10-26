@@ -1,0 +1,25 @@
+.path_url {
+  margin-top: 8em;
+  background-color: #f6f6f6;
+  height: 3em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 10em;
+  align-items: center;
+  font-size: 0.9em;
+  color: var(--color-icon);
+}
+
+#link-navpath {
+  color: #000;
+}
+
+.information_product {
+  margin: 2em 10em;
+  display: flex;
+}
+
+.image-product {
+  display: flex;
+}

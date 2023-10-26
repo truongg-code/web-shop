@@ -1,5 +1,5 @@
 import React from "react";
-import "@styles/contact_us.css";
+import "./contact_us.css";
 import Feedback from "@components/Feedback";
 import Link from "next/link";
 
