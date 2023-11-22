@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import "./product_page.css";
+import Product from "@components/Product";
 
-const Product = () => {
+const ProductPage = () => {
   return (
     <>
       <div className="path_url">
@@ -58,7 +59,7 @@ const Product = () => {
             Alphabets Foil Balloon / Custom Banner - 16&quot; Inch - Single
             Piece
           </h3>
-          <p className="price">$50</p>
+          <p id="price">$50</p>
           <ul className="describe">
             <li>Single Alphabet foil Balloon,16&quot; Inch size.</li>
             <li>
@@ -69,17 +70,46 @@ const Product = () => {
           </ul>
           <div className="btn-order">
             <div className="quantity">
-              <button>-</button>
+              <button id="decrease">-</button>
               <input min={1} max={999} value="1" step={1} />
 
-              <button>+</button>
+              <button id="increase">+</button>
             </div>
             <button className="add-to-cart">ADD TO CART</button>
           </div>
+          <div className="more-detail">
+            <p>More detail:</p>
+            <p id="infor_more">
+              ➣To Inflate - Use the plastic straw and inflate the air. When the
+              inflation is completed take out the straw and the balloons seals
+              automaticaly. Keep balloons away from fire. Easy to deflate with
+              inserting plastic straw to deflate for reuse.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="may-like">
+        <h3>You may also like</h3>
+        <div className="product_list">
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+        </div>
+      </div>
+
+      <div className="recent-view may-like">
+        <h3>Recent viewed products</h3>
+        <div className="product_list">
+          <Product />
+          <Product />
+          <Product />
+          <Product />
         </div>
       </div>
     </>
   );
 };
 
-export default Product;
+export default ProductPage;
